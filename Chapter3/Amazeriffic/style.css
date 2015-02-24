@@ -44,22 +44,25 @@ main .right {
   width: 285px;
 }
 
-h2
+h2.heading
 {
 color:#3f729b;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-strong
+h4
 {
 color:#3f729b;
 font-family: Arial, Helvetica, sans-serif;
+margin:0px;
 }
 
-main p
+.para
 {
 font-family:Tahoma;
+font-size:14px;
 }
+
 footer .left {
   float: left;
   width: 570px;
