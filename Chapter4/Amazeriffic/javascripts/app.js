@@ -49,6 +49,14 @@ var main = function () {
                /* Alternatively append() allows multiple arguments so the above
                 can be done with $content = $("<div>").append($input, $button); */
             }
+			else if ($element.parent().is(":nth-child(4)")) {
+				$content = $("<div style='width:700px;'>");
+				$content.append('<p style="margin-bottom:15px;background:none;"><a class="group4" style="margin:10px 15px;"  href="images/amazeriffic1.png" title=""><img src="images/amazeriffic1.png" width="300" height="200"/></a> <a class="group4" style="margin:10px 15px;" href="images/amazeriffic2.png" title=""><img src="images/amazeriffic2.png" width="300" height="200"/></a></p>');
+				$content.append('<p style="margin-top:15px;background:none;"><a class="group4" style="margin:10px 15px;"  href="images/amazeriffic3.png" title=""><img src="images/amazeriffic3.png" width="300" height="200"/></a> <a class="group4"  style="margin:10px 15px;"href="images/amazeriffic4.png" title=""><img src="images/amazeriffic4.png" width="300" height="200"/></a></p>');
+				$content.on("click", function () {
+				$("a.group4").colorbox({rel:'group4', slideshow:true, open:true});
+				});
+			}
 
             $("main .content").append($content);
 
